@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.billmate.AddBill">
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Click on your bill type:"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="64dp"
+                android:id="@+id/btnInternet"
+                android:layout_height="64dp"
+                android:src="@drawable/internet"
+                android:elevation="10dp"
+                app:cb_color="#0459f4"
+                app:cb_pressedRingWidth="10dip" />
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="64dp"
+                android:id="@+id/btnElectricity"
+                android:layout_height="64dp"
+                android:src="@drawable/electricity"
+                android:elevation="10dp"
+                app:cb_color="#e74c3c"
+                app:cb_pressedRingWidth="10dip"
+                android:layout_toRightOf="@id/btnInternet"/>
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="64dp"
+                android:id="@+id/btnWater"
+                android:layout_height="64dp"
+                android:elevation="10dp"
+                android:src="@drawable/water"
+                app:cb_color="#1de9b6"
+                app:cb_pressedRingWidth="10dip"
+                android:layout_toRightOf="@id/btnElectricity"/>
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="64dp"
+                android:id="@+id/btnUnknown"
+                android:layout_height="64dp"
+                android:elevation="10dp"
+                android:src="@drawable/unknown"
+                app:cb_color="#4caf50"
+                app:cb_pressedRingWidth="10dip"
+                android:layout_toRightOf="@id/btnWater"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/imageView"
+                android:contentDescription="icon"
+                android:layout_gravity="center|left" />
+
+            <EditText
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextBillType"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:layout_gravity="center_vertical|left|top"
+                android:hint="Enter label"
+                android:autoText="false"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/TextViewEuro"
+                android:layout_gravity="center_vertical|left|top"
+                android:visibility="invisible"
+                android:text="€"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/activity_vertical_margin" />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                android:id="@+id/editTextAmount"
+                android:layout_centerVertical="true"
+                android:visibility="invisible" />
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cb_color="#4caf50"
+                app:cb_pressedRingWidth="10dip"
+                android:src="@drawable/ic_plus"
+                android:visibility="invisible"
+                android:id="@+id/btnAccept"
+                />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="276dp"
+            android:id="@+id/listViewBills"
+            android:layout_marginBottom="1dp" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:id="@+id/frameLayout"
+            android:elevation="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <at.markushi.ui.CircleButton
+                android:text="left"
+                android:layout_width="74dip"
+                android:layout_height="74dip"
+                app:cb_color="@color/red900"
+                app:cb_pressedRingWidth="8dip"
+                android:id="@+id/btnCancel"
+                android:elevation="10dp"
+                android:src="@drawable/ic_back"
+                android:layout_gravity="center_vertical|bottom|left" />
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="74dip"
+                android:layout_height="74dip"
+                app:cb_color="@color/green1000"
+                app:cb_pressedRingWidth="8dip"
+                android:id="@+id/buttonConfirm"
+                android:src="@drawable/ic_yes"
+                android:elevation="10dp"
+                android:layout_gravity="center_vertical|bottom|right" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+<!-- From: file:/Users/riginos/Desktop/Billmate/app/src/main/res/layout/activity_add_bill.xml -->

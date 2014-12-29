@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/riginos/Desktop/Billmate/app/build/intermediates/pre-dexed/debug/classes-5f1cf448dce2b7ccf137068eb9f5ac41249bf166.jar"
+        jar="/Users/riginos/Desktop/Billmate/app/build/intermediates/exploded-aar/org.lucasr.twowayview/layouts/1.0.0-SNAPSHOT/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c7302991df225438b9a48dfb6627cc6b6f26c567"/>
+    <item
+        dex="/Users/riginos/Desktop/Billmate/app/build/intermediates/pre-dexed/debug/classes-a0621c628f652ce0b9be239877df835a0c7b9d71.jar"
+        jar="/Users/riginos/Desktop/Billmate/app/build/intermediates/exploded-aar/com.github.markushi/circlebutton/1.1/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ebe3b1f14fa79ba3cd1588acda4e6517ee9fe611"/>
+    <item
+        dex="/Users/riginos/Desktop/Billmate/app/build/intermediates/pre-dexed/debug/classes-2f0de2b88a0f601bcba5447e445078e91ca08a84.jar"
+        jar="/Users/riginos/Desktop/Billmate/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4796f18d3750bf2bfa078407a94a7f9db35b440d"/>
+    <item
+        dex="/Users/riginos/Desktop/Billmate/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-3f10e0e9d3fc41b34024e2deb2860a34f7f0b4d2.jar"
+        jar="/Users/riginos/Desktop/Billmate/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f"/>
+    <item
+        dex="/Users/riginos/Desktop/Billmate/app/build/intermediates/pre-dexed/debug/classes-0bbaa6ae85090d0a1056fc958a18caa22e1cca87.jar"
+        jar="/Users/riginos/Desktop/Billmate/app/build/intermediates/exploded-aar/org.lucasr.twowayview/core/1.0.0-SNAPSHOT/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0e4aeef9346f143a3595ccfd591290f5d4bca18a"/>
+    <item
+        dex="/Users/riginos/Desktop/Billmate/app/build/intermediates/pre-dexed/debug/classes-5756cf808c8479e096c4502ff1735df1c2486585.jar"
+        jar="/Users/riginos/Desktop/Billmate/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3"/>
+    <item
+        dex="/Users/riginos/Desktop/Billmate/app/build/intermediates/pre-dexed/debug/android-iconify-1.0.8-7e345bf05c94fd005b2435d97c30d2188b5f7dc3.jar"
+        jar="/Users/riginos/.gradle/caches/modules-2/files-2.1/com.joanzapata.android/android-iconify/1.0.8/7bba1039e3413ac0c82452b431a4aaa76648f7e9/android-iconify-1.0.8.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="7bba1039e3413ac0c82452b431a4aaa76648f7e9"/>
+    <item
+        dex="/Users/riginos/Desktop/Billmate/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-31173ce27ee47253259371c6c0067ef42dab192c.jar"
+        jar="/Users/riginos/Desktop/ANDROID SDK/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6"/>
+
+</pre-dex-items>

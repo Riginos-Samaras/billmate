@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context="com.billmate.RoommateProfile">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@color/blue1100"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/payoff_dues"
+                    android:elevation="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"
+
+                    android:id="@+id/dueuntilpayoff" />
+            </LinearLayout>
+            />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/blue1000"  />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Choose unpaid bills"
+                android:elevation="2dp"
+                android:id="@+id/textView6"
+                android:layout_gravity="center"
+
+                android:textColor="@color/white" />
+
+            <at.markushi.ui.CircleButton
+                android:text="left"
+                android:layout_width="28dip"
+                android:layout_height="28dip"
+                android:id="@+id/button_pay"
+                android:elevation="@dimen/button_press_elevation"
+                android:src="@drawable/ic_yes"
+                app:cb_color="@color/teal400"
+                app:cb_pressedRingWidth="8dip"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="16dp" />
+            <!--
+                            <Switch
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/switch_roommates"
+                                android:elevation="2dp"
+                                android:layout_gravity="center|right"
+                                android:checked="false"
+                                android:layout_marginRight="48dp" />-->
+        </FrameLayout>
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:id="@+id/listViewSelectBills"
+            android:layout_below="@+id/textViewRoomateName"
+            android:layout_centerHorizontal="true"
+           />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@color/blue1100"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Due to roomates:"
+                    android:layout_gravity="center_vertical"
+                    android:elevation="15dp"
+                    android:id="@+id/roomates_dues"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="€"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:id="@+id/duetoroomates" />
+                </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/blue1000"  />
+
+            <at.markushi.ui.CircleButton
+                android:text="left"
+                android:layout_width="28dip"
+                android:layout_height="28dip"
+                android:id="@+id/button_unpay"
+                android:elevation="@dimen/button_press_elevation"
+                android:src="@drawable/ic_x"
+                app:cb_color="@color/red"
+                app:cb_pressedRingWidth="8dip"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="16dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Bills you paid"
+                android:elevation="2dp"
+                android:layout_gravity="center"
+
+                android:textColor="@color/white" />
+
+            <!--
+                            <Switch
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/switch_roommates"
+                                android:elevation="2dp"
+                                android:layout_gravity="center|right"
+                                android:checked="false"
+                                android:layout_marginRight="48dp" />-->
+        </FrameLayout>
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:id="@+id/listViewPaidBills"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/frameLayout"
+            android:elevation="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom">
+
+            <at.markushi.ui.CircleButton
+                android:text="left"
+                android:layout_width="54dip"
+                android:layout_height="54dip"
+                android:id="@+id/btnCancel"
+                android:elevation="10dp"
+                android:src="@drawable/ic_back"
+                app:cb_color="@color/purple"
+                app:cb_pressedRingWidth="8dip"
+                android:layout_gravity="bottom|left" />
+
+        </FrameLayout>
+        <!--  <at.markushi.ui.CircleButton
+                android:text="left"
+                android:layout_width="74dip"
+                android:layout_height="74dip"
+                android:id="@+id/btnCancel"
+                android:elevation="10dp"
+                android:src="@drawable/ic_back"
+                android:layout_gravity="center_vertical|bottom|left" />
+               app:cb_color="@color/red"
+                app:cb_pressedRingWidth="8dip"-->
+    </LinearLayout>
+
+
+</RelativeLayout>
